@@ -39,8 +39,8 @@ Designed for NOC / MSP / K-12 operational awareness.
 
 ---
 
-## Project Structure
 
+## Project Structure
 project-root/
 │
 ├── main.py
@@ -57,8 +57,8 @@ project-root/
 ├── README.md
 └── .gitignore
 
-
 ---
+
 
 ## Requirements
 
