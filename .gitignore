@@ -1,0 +1,17 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# VS Code settings (optional)
+.vscode/
+
+# PyInstaller
+build/
+dist/
+*.spec
