@@ -4,6 +4,11 @@ A lightweight Windows desktop ticker that continuously displays real-time servic
 
 Created using ChatGPT
 
+
+
+![alt text](https://github.com/Mannshow17/status-ticker-overlay/blob/b4a62b5ea613a3b8745bfabf3c3549b80f210352/status%20ticker%20screenshot.png)
+
+
 The overlay sits at the top of your screen (AppBar-style) and shows:
 
 - 🟢 Operational  
