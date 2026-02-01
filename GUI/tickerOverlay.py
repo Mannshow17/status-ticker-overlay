@@ -199,7 +199,7 @@ class TickerOverlay(tk.Tk):
         for idx, seg in enumerate(segs):
             if idx > 0:
                 sep_id = self.canvas.create_text(
-                    x, y, text=ui.SEP, fill=ui.COLOR_OK, font=self.ticker_font, anchor="w"
+                    x, y, text=ui.SEP, fill='white', font=self.ticker_font, anchor="w"
                 )
                 self.items.append({"id": sep_id, "kind": "sep", "url": None})
                 x = self.canvas.bbox(sep_id)[2] + 2
