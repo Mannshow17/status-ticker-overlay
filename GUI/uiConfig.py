@@ -8,7 +8,7 @@ TIMEOUT = 12
 
 BAR_HEIGHT = 46          # height of the always-on-top bar
 BG = "#111111"
-COLOR_OK = "#e6e6e6"
+COLOR_OK = "#0cf704"         # green
 COLOR_DEGRADED = "#ffd24d"   # yellow
 COLOR_OUTAGE = "#ff4d4d"     # red
 COLOR_LINK_HINT = "#7aa7ff"  # subtle blue hint for clickable items (optional)
