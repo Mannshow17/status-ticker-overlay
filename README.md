@@ -40,26 +40,6 @@ Designed for NOC / MSP / K-12 operational awareness.
 ---
 
 
-## Project Structure
-project-root/
-│
-├── main.py
-│
-├── GUI/
-│ ├── init.py
-│ └── tickerOverlay.py # Tkinter UI + scrolling logic
-│
-├── Utility/
-│ ├── init.py
-│ ├── windowsAppBar.py # Windows AppBar + monitor logic
-│ └── status_sources.py # Cloudflare / Google / Securly / Microsoft fetchers
-│
-├── README.md
-└── .gitignore
-
----
-
-
 ## Requirements
 
 - Windows
