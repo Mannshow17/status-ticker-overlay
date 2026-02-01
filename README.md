@@ -4,6 +4,11 @@ A lightweight Windows desktop ticker that continuously displays real-time servic
 
 Created using ChatGPT
 
+
+
+![alt text](https://github.com/Mannshow17/status-ticker-overlay/blob/b4a62b5ea613a3b8745bfabf3c3549b80f210352/status%20ticker%20screenshot.png)
+
+
 The overlay sits at the top of your screen (AppBar-style) and shows:
 
 - 🟢 Operational  
@@ -39,40 +44,47 @@ Designed for NOC / MSP / K-12 operational awareness.
 
 ---
 
-## Project Structure
 
-project-root/
-│
-├── main.py
-│
-├── GUI/
-│ ├── init.py
-│ └── tickerOverlay.py # Tkinter UI + scrolling logic
-│
-├── Utility/
-│ ├── init.py
-│ ├── windowsAppBar.py # Windows AppBar + monitor logic
-│ └── status_sources.py # Cloudflare / Google / Securly / Microsoft fetchers
-│
-├── README.md
-└── .gitignore
+## Installation (Windows)
 
+1) **Clone or download**
+    - Clone with Git:
+        ```powershell
+        git clone https://github.com/Mannshow17/status-ticker-overlay.git
+        ```
+    - Or download the ZIP from GitHub, extract it, and open a terminal in the extracted folder.
 
----
+2) **Install Python (3.10+)**
+    - Verify:
+      ```powershell
+      py --version
+      ```
+    - If that fails, install Python from python.org and ensure **Add Python to PATH** is checked.
 
-## Requirements
+3) **Install dependencies (run from project root)**
+     ```powershell
+     pip install requests beautifulsoup4
+     ```
 
-- Windows
-- Python 3.10+ (tested on 3.14)
-- Internet access
+5) **Run the app (run from project root)**
+    - `py main.py`
+    - ⚠ Do **not** run `GUI/tickerOverlay.py` directly (imports assume `main.py` is the entry point).
 
-Python packages:
+6) **Expected behavior**
+    - A ticker bar appears at the top of your screen.
+    - Screen space is reserved so maximized apps sit below it.
+    - Providers show:
+        - 🟢 Operational
+        - 🟡 Degraded
+        - 🔴 Outage
+    - Provider text is clickable and opens the status/incident page.
+    - Status refreshes automatically.
 
-requests
-beautifulsoup4
+7) **Troubleshooting**
+    - If imports fail, confirm you ran:
+        - `py main.py`
+      from the project root (not `py GUI\tickerOverlay.py`).
+      - `__pycache__` folders are normal and are ignored by `.gitignore`.
 
-Always run from the project loop:
-
-main.py
 
 
